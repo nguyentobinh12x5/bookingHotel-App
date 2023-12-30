@@ -1,0 +1,21 @@
+.Container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.Container table {
+  width: 1024px;
+  border-collapse: collapse; /* This removes the space between the borders of your cells */
+}
+
+.Container table th,
+.Container table td {
+  border: 1px solid black; /* This adds a border to your table headers (th) and table data cells (td) */
+  padding: 10px; /* Optional: This adds some space around your content inside the cells */
+}
+.Container table th {
+  background-color: rgb(63, 204, 236);
+  color: white;
+}
