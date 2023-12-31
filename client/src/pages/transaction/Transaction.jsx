@@ -22,8 +22,7 @@ const Transaction = () => {
               <th>#</th>
               <th>Hotel</th>
               <th>Room</th>
-              <th>Date Start</th>
-              <th>Date End</th>
+              <th>Date</th>
               <th>Price</th>
               <th>Payment Method</th>
               <th>Status</th>
@@ -35,9 +34,11 @@ const Transaction = () => {
                 <td>{index + 1}</td>
                 <td>{item.hotelId.name}</td>
                 <td>{item.room.map((room) => room.number).join(", ")}</td>
-                <td>{new Date(item.dateStart).toLocaleDateString("vi-VN")}</td>
-                <td>{new Date(item.dateEnd).toLocaleDateString("vi-VN")}</td>
-                <td>{item.price}</td>
+                <td>
+                  {new Date(item.dateStart).toLocaleDateString("vi-VN")} -
+                  {new Date(item.dateEnd).toLocaleDateString("vi-VN")}
+                </td>
+                <td>${item.price}</td>
                 <td>{item.payment}</td>
                 <td>{item.status}</td>
               </tr>

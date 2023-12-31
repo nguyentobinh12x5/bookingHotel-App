@@ -6,6 +6,7 @@ import Login from "./pages/login/Login";
 import Register from "./pages/register/Register";
 import Booking from "./pages/booking/Booking";
 import Transaction from "./pages/transaction/Transaction";
+import Logout from "./pages/logout/Logout";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/hotels/:id" element={<Hotel />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/logout" element={<Logout />} />
         <Route path="/booking" element={<Booking />} />
         <Route path="/transaction" element={<Transaction />} />
       </Routes>
